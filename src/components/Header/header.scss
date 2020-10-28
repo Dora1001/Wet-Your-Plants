@@ -1,11 +1,50 @@
 @import "../../styles/mixins";
+@import "../../styles/fonts";
 
 @include desktop {
+
   .App-header {
-    background-color: springgreen;
+    background-color: #dbdbdb;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+}
+
+
+  .App-logo {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    padding: 10px 0 10px 50px;
+
   }
+
+  .App-slider {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .App-slider-img {
+    width: 600px;
+    height: auto;
+  }
+  .App-logo-img {
+    width: 233px;
+  }
+
+
+
 }
 
 @include tablet {
-  background-color: indianred;
+  .App-header {
+    background-color: #dbdbdb;
+  }
+
 }
+
+
