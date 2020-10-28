@@ -6,7 +6,7 @@ export const Header = () => {
         <header className="App-header">
             <div className="App-logo">
 
-            <img className="App-logo-img" src="../../images/logo_HOP.svg"/>
+            <img className="App-logo-img" src="../../images/logo_HOP.svg" alt="house of plants logo"/>
             </div>
 
             <div className="App-slider">
@@ -14,7 +14,7 @@ export const Header = () => {
                     <h1>Filodendrony</h1>
                     <p>Odkryj świat filodendronów</p>
                 </div>
-                <img className="App-slider-img" src="../../images/slider1.jpg"/>
+                <img className="App-slider-img" src="../../images/slider1.jpg" alt="philodendrons"/>
             </div>
 
         </header>
