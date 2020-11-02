@@ -28,6 +28,7 @@ export const Login = () => {
             .auth()
             .signInWithEmailAndPassword(email, password)
             .catch(err => {
+
                 switch (err.code) {
                     case "auth/invalid-email":
                     case "auth/user-disable":

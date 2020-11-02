@@ -1,11 +1,12 @@
 @import "../../styles/mixins";
 @import "../../styles/fonts";
+@import "../../styles/variables";
 
 @include desktop {
 
   .App-header {
     background-color: #dbdbdb;
-    font-family: 'Lato', sans-serif;
+    font-family: $fontLato;
     font-weight: 400;
 
 

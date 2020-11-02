@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import Signup from "../Signup/signup";
+
 
 export const Header = () => {
     return (
@@ -11,6 +11,7 @@ export const Header = () => {
             <div className="App-logo">
 
             <img className="App-logo-img" src="../../images/logo_HOP.svg" alt="house of plants logo"/>
+                <a href="#link-login"><div className="App-btn-login">Water calendar</div></a>
 
 
 
