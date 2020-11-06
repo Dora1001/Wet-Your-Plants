@@ -28,7 +28,7 @@ const Form = (props) => {
             </>
         ) : (
             <>
-                <button onClick={handleSignUp}>Sign up</button>
+                <button className="form-login-btn" onClick={handleSignUp}>Sign up</button>
                 <p>Have an account?<span onClick={() => setHasAccount(!hasAccount)}>Sign in</span></p>
             </>
         )}

@@ -4,7 +4,22 @@
 
 
 
-  button {
+
+
+.App-btn-logout {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 150px;
+  margin: 30px;
+  padding: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.form-login-btn {
     border: none;
     outline: none;
     width: 100%;

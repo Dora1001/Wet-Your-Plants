@@ -1,18 +1,32 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import DatePicker from "react-datepicker";
 
 import "./calendar.scss";
 
 
-
 export const Calendar = () => {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(null);
-    const onChange = dates => {
+
+    useEffect(()=> {
+        const saveTime = localStorage.getItem("Time");
+        if (saveTime) {
+            setEndDate(JSON.parse(saveTime))
+        }
+
+    },[])
+
+    useEffect(() => {
+        localStorage.setItem("Time", JSON.stringify(endDate));
+    }, [endDate]);
+
+        const onChange = dates => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
     };
+
+
     return (
         <DatePicker
             selected={startDate}

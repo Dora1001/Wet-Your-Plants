@@ -2,22 +2,155 @@
 @import "../../styles/fonts";
 @import "../../styles/variables";
 
+
+.App-green {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.App-green-box {
+  border: 1px solid $colorGreen;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 30px;
+  color: $colorGreen;
+
+}
+
+.App-btn-read {
+  background-color: transparent;
+  border: 1px solid $colorGreen;
+  border-radius: 3px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  color: $colorGreen;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.App-btn-read:hover{
+  border: 1px solid darkgreen;
+  transition: 0.5s;
+  color: darkgreen;
+
+}
+
+
+.App-header {
+  background-color: white;
+  font-size: 24px;
+  color: #000000;
+  font-family: $fontLato;
+  text-align: center;
+
+  h1 {
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: 300;
+
+  }
+
+  p {
+    font-weight: 300;
+
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+
+  .App-logo-img {
+    margin: 10px;
+    width: 163px;
+  }
+
+}
+
+.App-header-top {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: $colorGreen;
+  border-radius: 0px;
+  margin: 20px 0 20px 0;
+
+}
+
+.App-btn-login {
+  background-color: $colorGreen;
+  border-radius: 3px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.App-btn-login:hover {
+  background-color: darkgreen;
+  transition: 0.3s;
+
+}
+
+link-login :hover {
+  text-decoration: none;
+
+}
+
+
+.App-slider-img {
+  width: 100%;
+  height: auto;
+}
+
+.App-slider {
+
+  .App-slider-txt {
+
+
+  }
+
+}
+
+
 @include desktop {
 
+
+  .App-btn-login {
+    margin: 10px 120px 10px 10px;
+  }
+
   .App-header {
-    background-color: #dbdbdb;
-    font-family: $fontLato;
+
     font-weight: 400;
 
 
     h1 {
-      margin: 10px;
+      margin: 30px;
       font-size: 1.5em;
-      font-weight: 300;
+      font-weight: 400;
 
     }
 
-}
+  }
 
 
   .App-logo {
@@ -45,18 +178,16 @@
   }
 
   .App-slider-img {
-    width: 600px;
+    width: 800px;
     height: auto;
   }
-
-
 
 
 }
 
 @include tablet {
   .App-header {
-    background-color: #dbdbdb;
+    background-color: white;
   }
 
 }
