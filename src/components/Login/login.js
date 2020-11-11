@@ -27,16 +27,16 @@ export const Login = () => {
         fire
             .auth()
             .signInWithEmailAndPassword(email, password)
-            .catch(err => {
-
-                switch (err.code) {
+            .catch(({code, message}) => {
+// eslint-disable-next-line default-case
+                switch (code) {
                     case 'auth/invalid-email':
                     case 'auth/user-disable':
                     case 'auth/user-not-found':
-                        setEmailError(err.message);
+                        setEmailError(message);
                         break;
                     case 'auth/user-wrong-password':
-                        setPasswordError(err.message);
+                        setPasswordError(message);
                         break;
                 }
             });
@@ -80,7 +80,7 @@ export const Login = () => {
 
     useEffect(() => {
         authListener();
-    }, [])
+    }, )
 
     return (
         <div className="login">
