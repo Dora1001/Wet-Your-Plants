@@ -30,12 +30,12 @@ export const Login = () => {
             .catch(err => {
 
                 switch (err.code) {
-                    case "auth/invalid-email":
-                    case "auth/user-disable":
-                    case "auth/user-not-found":
+                    case 'auth/invalid-email':
+                    case 'auth/user-disable':
+                    case 'auth/user-not-found':
                         setEmailError(err.message);
                         break;
-                    case "auth/user-wrong-password":
+                    case 'auth/user-wrong-password':
                         setPasswordError(err.message);
                         break;
                 }
@@ -48,12 +48,13 @@ export const Login = () => {
             .auth()
             .createUserWithEmailAndPassword(email, password)
             .catch(err => {
+                // eslint-disable-next-line default-case
                 switch (err.code) {
-                    case "auth/email-already-in-use":
-                    case "auth/invalid-email":
+                    case 'auth/email-already-in-use':
+                    case 'auth/invalid-email':
                         setEmailError(err.message);
                         break;
-                    case "auth/user-weak-password":
+                    case 'auth/user-weak-password':
                         setPasswordError(err.message);
                         break;
                 }

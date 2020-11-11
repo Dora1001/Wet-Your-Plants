@@ -5,6 +5,7 @@ import Select from "react-select";
 import "./signup.scss";
 
 
+
 const optionsPlants = [
     {value: 'Geranium', label: 'Geranium 💧'},
     {value: 'Philodendron Pink Princess', label: 'Philodendron Pink Princess 💧💧'},
@@ -78,7 +79,6 @@ export const Signup = ({handleLogout}) => {
             </div>
 
         </div>
-
         </div>
 
 

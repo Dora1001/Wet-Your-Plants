@@ -1,0 +1,27 @@
+@import "../../styles/mixins";
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+
+.art-box{
+  margin: 40px;
+
+}
+
+.art-box-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.8em;
+  font-weight: 400;
+
+
+}
+
+
+.art-box-txt {
+line-height: 2em;
+  margin: 10px;
+  font-size: 1em;
+  font-weight: 400;
+
+}
