@@ -18,18 +18,7 @@ const optionsPlants = [
 
 ];
 
-// const useStateLs = localStorageKey => {
-//
-//     const [value, setValue] = useState(
-//         localStorage.getItem(localStorageKey)
-//     );
-//
-//     useEffect(() => {
-//         localStorage.setItem(localStorageKey, value);
-//         }, [value]);
-//   return [value, setValue];
-//
-// };
+
 
 export const Signup = ({handleLogout}) => {
     const [value, setValue] = useState(
@@ -49,11 +38,7 @@ export const Signup = ({handleLogout}) => {
     useEffect(() => {
         localStorage.setItem("myPlant", JSON.stringify(value));
     }, [value]);
-    // return [value, setValue];
 
-    // const [value, setValue] = useStateLs(
-    //     "myPlant"
-    // );
 
     return (
         <div className="App-header">

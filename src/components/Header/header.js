@@ -19,11 +19,11 @@ export const Header = () => {
                 <div className="App-slider-txt">
                     <h1>How Often To Water Houseplants</h1>
                     <p>How To Water Plants</p>
-                    <Router>
+
                         <Link to="/article">
                             <button className="App-btn-read">Read ></button>
                         </Link>
-                    </Router>
+
                 </div>
                 <img className="App-slider-img" src={"../../images/img_top.svg"} alt="philodendrons"/>
             </div>
