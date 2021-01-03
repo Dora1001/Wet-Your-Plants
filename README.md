@@ -1,4 +1,4 @@
-#`Wet yours plants - react App`
+# Wet yours plants - react App
 
 an app that helps to care for flowers. With a calendar to aid watering plants.
 

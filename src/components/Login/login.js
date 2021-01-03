@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import fire from "./fire";
 import './login.scss';
 import Form from "./form";
-import Signup from "../Signup/signup";
+import {Signup} from "../../components/Signup/signup";
 
 export const Login = () => {
     const [user, setUser] = useState('');
