@@ -7,7 +7,7 @@ export const Article = () => {
         <article>
             <div className="art-box">
 
-                <img className="App-slider-img" src={"../../images/img_top.svg"} alt="philodendrons"/>
+                <img className="App-slider-img" src={"../../images/img_1_art_water.jpg"} alt="philodendrons"/>
 
                 <h1 className="art-box-title">The Right Way to Water Common Houseplants</h1>
                 <p className="art-box-txt">

@@ -173,12 +173,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
   }
 
   .App-slider-img {
-    width: 800px;
+    width: 100%;
     height: auto;
   }
 
