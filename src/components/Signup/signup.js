@@ -1,6 +1,6 @@
 import React from "react";
 import {Header} from "../../components/Header/header";
-import {Home} from "../../components/Home/home";
+import {Login} from "../../components/Login/login";
 
 
 export const Signup = () => {
@@ -9,8 +9,7 @@ export const Signup = () => {
     return (
         <div>
             <Header/>
-            <Home/>
-
+            <Login/>
         </div>
 
     )

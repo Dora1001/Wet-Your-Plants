@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import fire from "./fire";
 import './login.scss';
 import Form from "./form";
-import {Signup} from "../../components/Signup/signup";
+import {Home} from "../../components/Home/home";
 
 export const Login = () => {
     const [user, setUser] = useState('');
@@ -85,7 +85,7 @@ export const Login = () => {
     return (
         <div className="login">
             {user ? (
-                <Signup handleLogout={handleLogout} />
+                <Home handleLogout={handleLogout} />
             ) : (
                 <Form email={email}
                       setEmail={setEmail}
