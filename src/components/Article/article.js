@@ -7,6 +7,8 @@ export const Article = () => {
         <article>
             <div className="art-box">
 
+                <img className="App-slider-img" src={"../../images/img_top.svg"} alt="philodendrons"/>
+
                 <h1 className="art-box-title">The Right Way to Water Common Houseplants</h1>
                 <p className="art-box-txt">
                     Sometimes caring for your plants feels like a full time job. There's so much to remember, from

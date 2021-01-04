@@ -1,0 +1,28 @@
+@import "../../styles/mixins";
+@import "../../styles/fonts";
+@import "../../styles/variables";
+
+
+.footer-mail {
+  margin: 20px 100px 20px 100px;
+
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    color: lighten($colorDark, 50%);
+
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $colorLightgray;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+@include desktop {
+
+}

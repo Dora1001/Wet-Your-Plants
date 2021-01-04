@@ -33,7 +33,7 @@
 
 }
 
-.App-btn-read:hover{
+.App-btn-read:hover {
   border: 1px solid darkgreen;
   transition: 0.5s;
   color: darkgreen;
@@ -87,7 +87,7 @@
   flex-direction: row;
   align-items: center;
   background-color: $colorGreen;
-  border-radius: 0px;
+  border-radius: 0;
   margin: 20px 0 20px 0;
 
 }
@@ -110,7 +110,7 @@
 
 }
 
-link-login :hover {
+.link-login :hover {
   text-decoration: none;
 
 }
@@ -139,7 +139,7 @@ link-login :hover {
   }
 
   .App-header {
-
+    margin: 0 100px 0 100px;
     font-weight: 400;
 
 
