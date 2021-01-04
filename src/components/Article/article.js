@@ -1,10 +1,19 @@
 import React from "react";
 import "./article.scss";
+import {Link} from "react-router-dom";
 
 export const Article = () => {
 
     return (
         <article>
+            <div className="App-logo">
+
+                    <Link to="/">
+                        <img className="App-logo-img" src={"../../images/logo_WYP.svg"} alt="house of plants logo"/>
+                    </Link>
+
+
+            </div>
             <div className="art-box">
 
                 <img className="App-art-slider-img" src={"../../images/img_1_art_water.jpg"} alt="philodendrons"/>
