@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export const Article = () => {
 
     return (
-        <article>
+        <article className="Art-container">
             <div className="App-logo">
 
                     <Link to="/">

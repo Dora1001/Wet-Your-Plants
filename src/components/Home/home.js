@@ -1,5 +1,6 @@
 import React from "react";
 import {Calendar} from "../Calendar/calendar";
+import {Alert} from "../Alert/alert";
 import {useState, useEffect} from "react";
 import Select from "react-select";
 import "./home.scss";
@@ -61,6 +62,7 @@ export const Home = ({handleLogout}) => {
                     />
                     <div className="Signup-box"><span className="Signup-box-span">Select the date of the next watering</span></div>
                     <Calendar/>
+                    <Alert/>
                 </div>
 
             </div>
